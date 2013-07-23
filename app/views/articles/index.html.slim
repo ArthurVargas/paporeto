@@ -1,0 +1,21 @@
+h1 Listing articles
+
+table.table
+  tr
+    th Title
+    th Summary
+    th
+
+  - @articles.each do |article|
+    tr
+      td = article.title
+      td = article.summary
+      td
+        .btn-group
+          = link_to 'Show', article, class: 'btn'
+          = link_to 'Edit', edit_article_path(article), class: 'btn'
+          = link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete, class: 'btn'
+
+br
+
+= link_to 'New Article', new_article_path, class: 'btn btn-primary'
