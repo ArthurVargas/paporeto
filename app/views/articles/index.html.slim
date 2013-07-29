@@ -12,10 +12,10 @@ table.table
       td = article.summary
       td
         .btn-group
-          = link_to 'Show', article, class: 'btn'
-          = link_to 'Edit', edit_article_path(article), class: 'btn'
-          = link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete, class: 'btn'
+          = link_to 'Ver', article, class: 'btn'
+          = link_to 'Editar', edit_article_path(article), class: 'btn'
+          = link_to 'Excluir', article, :confirm => 'Tem certeza?', :method => :delete, class: 'btn'
 
 br
 
-= link_to 'New Article', new_article_path, class: 'btn btn-primary'
+= link_to 'Novo Artigo', new_article_path, class: 'btn btn-primary'
