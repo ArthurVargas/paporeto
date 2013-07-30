@@ -12,6 +12,11 @@ pt-BR:
       default_message: "Por favor, corrija os problemas abaixo:"
     # Labels and hints examples
     labels:
+      article:
+        category: Categoria
+        title: Título
+        summary: Resumo
+        body: Texto
       defaults:
         password: Senha
         name: Nome
