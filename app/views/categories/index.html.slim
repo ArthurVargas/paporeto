@@ -10,10 +10,12 @@ table
   - @categories.each do |category|
     tr
       td = category.name
-      td = link_to 'Show', category
-      td = link_to 'Edit', edit_category_path(category)
-      td = link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete
+      td
+        .btn-group
+          = link_to 'Ver', category, class:'btn'
+          = link_to 'Editar', edit_category_path(category), class:'btn'
+          = link_to 'Excluir', category, :confirm => 'Are you sure?', :method => :delete, class: 'btn'
 
 br
 
-= link_to 'New Category', new_category_path
+= link_to 'Nova Categoria', new_category_path, class: 'btn btn-primary'
