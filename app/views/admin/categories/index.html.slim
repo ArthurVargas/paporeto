@@ -1,0 +1,21 @@
+h1 Listing categories
+
+table
+  tr
+    th Name
+    th
+    th
+    th
+
+  - @categories.each do |category|
+    tr
+      td = category.name
+      td
+        .btn-group
+          = link_to 'Ver', [:admin, admin_category], class:'btn'
+          = link_to 'Editar', edit_admin_category_path(category), class:'btn'
+          = link_to 'Excluir', [:admin, category], :confirm => 'Are you sure?', :method => :delete, class: 'btn'
+= paginate @categories, theme: 'twitter-bootstrap'
+br
+
+= link_to 'Nova Categoria', new_admin_category_path, class: 'btn btn-primary'
