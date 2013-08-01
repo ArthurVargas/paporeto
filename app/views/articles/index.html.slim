@@ -17,7 +17,7 @@ table.table
           = link_to 'Ver', article, class: 'btn'
           = link_to 'Editar', edit_article_path(article), class: 'btn'
           = link_to 'Excluir', article, :confirm => 'Tem certeza?', :method => :delete, class: 'btn'
-
+= paginate @articles, theme: 'twitter-bootstrap'
 br
 
 = link_to 'Novo Artigo', new_article_path, class: 'btn btn-primary'
