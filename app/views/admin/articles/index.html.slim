@@ -14,9 +14,9 @@ table.table
       td = article.category.try :name
       td
         .btn-group
-          = link_to 'Ver', [:admin, article], class: 'btn'
-          = link_to 'Editar', edit_admin_article_path(article), class: 'btn'
-          = link_to 'Excluir', [:admin, article], :confirm => 'Tem certeza?', :method => :delete, class: 'btn'
+          = link_to 'Ver', [:admin, article], class: 'btn btn-small'
+          = link_to 'Editar', edit_admin_article_path(article), class: 'btn btn-small'
+          = link_to 'Excluir', [:admin, article], :confirm => 'Tem certeza?', :method => :delete, class: 'btn btn-danger btn-small'
 = paginate @articles, theme: 'twitter-bootstrap'
 br
 
