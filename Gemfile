@@ -29,10 +29,16 @@ gem 'slim-rails', '~> 2.0.1'
 gem 'simple_form', '~> 3.0.0.rc'
 gem 'uploadbox', '~> 0.0.4'
 
-#login
+# login
 gem 'devise', '~> 3.0.0'
 
-#pagination
+# frontend
+gem 'bourbon', '~> 3.1.8'
+gem 'neat', '~> 1.3.0'
+gem 'high_voltage', '~> 1.2.3'
+gem 'normalize-rails', '~> 2.1.1'
+
+# pagination
 gem 'kaminari' , '~> 0.14.1'
 gem 'bootstrap-kaminari-views', '~> 0.0.2'
 
