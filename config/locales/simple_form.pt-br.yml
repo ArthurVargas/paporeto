@@ -13,6 +13,7 @@ pt-BR:
     # Labels and hints examples
     labels:
       article:
+        featured: Em Destaque
         category: Categoria
         title: Título
         summary: Resumo
