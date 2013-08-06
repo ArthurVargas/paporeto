@@ -1,0 +1,5 @@
+Article.all.each do |article|
+  
+  article.update!(published_at: Time.now - 2.days)
+
+end
